@@ -1,0 +1,341 @@
+{
+  "name": "AKLE",
+  "roles": [
+    {
+      "name": "Top Shotta",
+      "color": 0,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "Connect",
+        "Speak",
+        "ManageChannels",
+        "ManageRoles",
+        "BanMembers",
+        "KickMembers",
+        "ManageMessages"
+      ],
+      "hoist": true
+    },
+    {
+      "name": "Big Homie",
+      "color": 16777215,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "Connect",
+        "Speak",
+        "ManageChannels",
+        "BanMembers",
+        "KickMembers",
+        "ManageMessages"
+      ],
+      "hoist": true
+    },
+    {
+      "name": "Shot Caller",
+      "color": 15158332,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "Connect",
+        "Speak",
+        "KickMembers",
+        "ManageMessages"
+      ],
+      "hoist": true
+    },
+    {
+      "name": "Member",
+      "color": 5793266,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "Connect",
+        "Speak",
+        "AttachFiles",
+        "EmbedLinks"
+      ]
+    },
+    {
+      "name": "Youngin",
+      "color": 16766720,
+      "permissions": [
+        "ViewChannel",
+        "SendMessages",
+        "ReadMessageHistory",
+        "Connect",
+        "Speak"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Management",
+      "overwrites": [
+        {
+          "target": "@everyone",
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "target": "Top Shotta",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        },
+        {
+          "target": "Big Homie",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        },
+        {
+          "target": "Shot Caller",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "name": "management",
+          "type": "text"
+        },
+        {
+          "name": "logs",
+          "type": "text"
+        },
+        {
+          "name": "meeting-room",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Information",
+      "overwrites": [
+        {
+          "target": "@everyone",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "name": "rules",
+          "type": "text"
+        },
+        {
+          "name": "announcements",
+          "type": "text"
+        },
+        {
+          "name": "applications",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Public",
+      "overwrites": [
+        {
+          "target": "@everyone",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "name": "lobby",
+          "type": "text"
+        },
+        {
+          "name": "flicks",
+          "type": "text",
+          "overwrites": [
+            {
+              "target": "@everyone",
+              "allow": [
+                "ViewChannel",
+                "ReadMessageHistory",
+                "AttachFiles",
+                "EmbedLinks",
+                "AddReactions"
+              ],
+              "deny": [
+                "SendMessages"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Community",
+      "overwrites": [
+        {
+          "target": "@everyone",
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "target": "Top Shotta",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        },
+        {
+          "target": "Big Homie",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        },
+        {
+          "target": "Shot Caller",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "name": "general",
+          "type": "text"
+        },
+        {
+          "name": "media",
+          "type": "text"
+        },
+        {
+          "name": "clips",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Motion",
+      "overwrites": [
+        {
+          "target": "@everyone",
+          "deny": [
+            "ViewChannel"
+          ]
+        },
+        {
+          "target": "Top Shotta",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        },
+        {
+          "target": "Big Homie",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        },
+        {
+          "target": "Shot Caller",
+          "allow": [
+            "ViewChannel",
+            "SendMessages",
+            "ReadMessageHistory",
+            "Connect",
+            "Speak"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "name": "motion",
+          "type": "text"
+        },
+        {
+          "name": "plays",
+          "type": "text"
+        },
+        {
+          "name": "stash",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "Voice Channels",
+      "overwrites": [
+        {
+          "target": "@everyone",
+          "allow": [
+            "ViewChannel",
+            "Connect",
+            "Speak"
+          ]
+        }
+      ],
+      "channels": [
+        {
+          "name": "Backstreet",
+          "type": "voice"
+        },
+        {
+          "name": "Trap",
+          "type": "voice"
+        },
+        {
+          "name": "Block",
+          "type": "voice"
+        },
+        {
+          "name": "AFK",
+          "type": "voice"
+        }
+      ]
+    }
+  ]
+}
